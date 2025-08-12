@@ -20,20 +20,21 @@ while (rematch == true) {
 
     if (player == computer) {
         hasil = 'SERI';
-    } else if (player == 'orang') {
-        // if (computer == 'semut') {
+    } else if (player == 'gajah') {
+        // if (computer == 'orang') {
         //     hasil == 'MENANG';
         // } else {
         //     hasil = 'KALAH!';
         // }
         // operator ternary:
-        hasil = (computer == 'gajah') ? 'KALAH!' : 'MENANG';
-    } else if (player == 'orang') {
-        hasil = (computer = 'semut') ? 'MENANG' : 'KALAH!';
+        hasil = (computer == 'semut') ? 'KALAH!' : 'MENANG';
+    } else if (player == 'semut') {
+        hasil = (computer = 'orang') ? 'KALAH!' : 'MENANG';
     }
-    else if (player == 'semut') {
-        hasil = (computer == 'gajah') ? 'MENANG' : 'KALAH!';
-    } else {
+    else if (player == 'orang') {
+        hasil = (computer == 'gajah') ? 'KALAH!' : 'MENANG';
+    }
+    else {
         hasil = 'kamu memasukan pilihan yang salah!';
     }
     // TAMPIL HASIL 
